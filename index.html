@@ -11,9 +11,11 @@
             <main>
                 <h1>Ten random email adresses</h1>
 
-                <ul>
+                <ul v-if="emailList.length === 10">
                     <li v-for="email in emailList">{{ email }}</li>
                 </ul>
+
+                <div v-else>Aspetta il popolamento della lista</div>
             </main>
         </div>
 
