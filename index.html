@@ -8,7 +8,13 @@
     </head>
     <body>
         <div id="app">
-            
+            <main>
+                <h1>Ten random email adresses</h1>
+
+                <ul>
+                    <li v-for="email in emailList">{{ email }}</li>
+                </ul>
+            </main>
         </div>
 
         <!-- vue v3 cdn -->
